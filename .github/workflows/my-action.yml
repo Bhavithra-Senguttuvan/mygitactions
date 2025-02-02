@@ -1,0 +1,21 @@
+name: My Custom Action
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # A step with your email address in the name
+      - name: 21f3000553@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
+
+      # Additional steps can be added here
